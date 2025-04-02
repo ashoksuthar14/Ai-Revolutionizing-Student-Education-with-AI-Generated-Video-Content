@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Video Storyboard Generator</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+    <div class="container mx-auto px-4 py-8">
+        <h1 class="text-4xl font-bold text-center mb-8">AI Video Storyboard Generator</h1>
+        
+        <div class="max-w-2xl mx-auto bg-white rounded-lg shadow-md p-6">
+            <div class="mb-6">
+                <label for="topic" class="block text-gray-700 text-sm font-bold mb-2">Video Topic</label>
+                <input type="text" id="topic" class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Enter your video topic">
+            </div>
+            
+            <button onclick="generateContent()" id="generateBtn" class="w-full bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600 transition duration-200">Generate Content</button>
+            
+            <div id="error" class="hidden mt-4 text-red-500 text-center"></div>
+            
+            <div id="loading" class="hidden mt-4 text-center">
+                <p class="text-gray-600">Generating content...</p>
+            </div>
+            
+            <div id="results" class="mt-6 hidden">
+                <div class="mb-6">
+                    <h2 class="text-xl font-bold mb-2">Video Script</h2>
+                    <div id="script" class="bg-gray-50 p-4 rounded-lg whitespace-pre-line"></div>
+                </div>
+                
+                <div>
+                    <h2 class="text-xl font-bold mb-2">Storyboard</h2>
+                    <div id="storyboard" class="bg-gray-50 p-4 rounded-lg whitespace-pre-line"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        async function generateContent() {
+            const topic = document.getElementById('topic').value;
+            const generateBtn = document.getElementById('generateBtn');
+            const errorDiv = document.getElementById('error');
+            
+            if (!topic) {
+                errorDiv.textContent = 'Please enter a video topic';
+                errorDiv.classList.remove('hidden');
+                return;
+            }
+
+            // Reset UI state
+            errorDiv.classList.add('hidden');
+            generateBtn.disabled = true;
+            generateBtn.classList.add('opacity-50');
+            document.getElementById('loading').classList.remove('hidden');
+            document.getElementById('results').classList.add('hidden');
+
+            try {
+                const response = await fetch('/generate', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({ topic }),
+                });
+
+                const data = await response.json();
+                
+                if (response.ok) {
+                    document.getElementById('script').textContent = data.script;
+                    document.getElementById('storyboard').textContent = data.storyboard;
+                    document.getElementById('results').classList.remove('hidden');
+                } else {
+                    throw new Error(data.error || 'Failed to generate content');
+                }
+            } catch (error) {
+                errorDiv.textContent = error.message || 'Error generating content. Please try again.';
+                errorDiv.classList.remove('hidden');
+                console.error('Error:', error);
+            } finally {
+                generateBtn.disabled = false;
+                generateBtn.classList.remove('opacity-50');
+                document.getElementById('loading').classList.add('hidden');
+            }
+        }
+    </script>
+</body>
+</html>
