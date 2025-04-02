@@ -9,7 +9,9 @@
 **Revolutionizing Student Education with AI-Generated Video Content** is an AI-powered adaptive learning platform that dynamically personalizes video tutorials based on real-time student responses. Unlike traditional static videos, our solution ensures an interactive and engaging experience, helping students grasp concepts more effectively.
 
 🔗 **Website**: [https://mellifluous-kataifi-a8c5b5.netlify.app/![image](https://github.com/user-attachments/assets/96150a7a-ee69-4fc8-9cf8-aaf7010e3413)
+
 ]
+🔗 **Demo**: [Youtube Link](https://youtu.be/Ql-Mic2vZlE)
 
 ## 🚀 Features
 - **Adaptive Learning**: Real-time content adjustments based on student responses.
@@ -19,6 +21,11 @@
 - **Real-Time Feedback Loop**: Continuously refines the learning experience.
 - **Automated Content Creation**: Scalable and efficient video generation.
 - **Engagement Boosters**: Quizzes, gamification elements, and leaderboards.
+
+![Features](https://github.com/ashoksuthar14/Ai-Revolutionizing-Student-Education-with-AI-Generated-Video-Content/blob/main/mvp%202.png)
+![Features](https://github.com/ashoksuthar14/Ai-Revolutionizing-Student-Education-with-AI-Generated-Video-Content/blob/main/mvp%203.png)
+
+
 
 ## 🛠 Technology Stack
 ### Frontend:
@@ -38,6 +45,8 @@
 - Google Cloud NLP
 - Dialogflow (for chatbot interactions)
 - Google Cloud Video AI (for automated video generation)
+
+  ![FLowchart](https://github.com/ashoksuthar14/Ai-Revolutionizing-Student-Education-with-AI-Generated-Video-Content/blob/main/Flowchart%20of%20google.png)
 
 ## 📥 Installation
 1. Clone the repository:
