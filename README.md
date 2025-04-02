@@ -8,9 +8,7 @@
 ## 🌍 Overview
 **Revolutionizing Student Education with AI-Generated Video Content** is an AI-powered adaptive learning platform that dynamically personalizes video tutorials based on real-time student responses. Unlike traditional static videos, our solution ensures an interactive and engaging experience, helping students grasp concepts more effectively.
 
-🔗 **Website**: [https://mellifluous-kataifi-a8c5b5.netlify.app/![image](https://github.com/user-attachments/assets/96150a7a-ee69-4fc8-9cf8-aaf7010e3413)
-
-]
+🔗 **Website**: [https://mellifluous-kataifi-a8c5b5.netlify.app/![image](https://github.com/user-attachments/assets/96150a7a-ee69-4fc8-9cf8-aaf7010e3413)]
 🔗 **Demo**: [Youtube Link](https://youtu.be/Ql-Mic2vZlE)
 
 ## 🚀 Features
