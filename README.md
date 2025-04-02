@@ -1,7 +1,7 @@
 # Ai-Revolutionizing-Student-Education-with-AI-Generated-Video-Content
 
 
-# Revolutionizing Student Education with AI-Generated Video Content
+
 
 ![Project Banner]()
 
