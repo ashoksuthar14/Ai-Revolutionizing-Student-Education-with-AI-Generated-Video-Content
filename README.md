@@ -23,6 +23,7 @@
 ![Features](https://github.com/ashoksuthar14/Ai-Revolutionizing-Student-Education-with-AI-Generated-Video-Content/blob/main/mvp%202.png)
 ![Features](https://github.com/ashoksuthar14/Ai-Revolutionizing-Student-Education-with-AI-Generated-Video-Content/blob/main/mvp%203.png)
 
+![Sturcture Diagram](https://github.com/ashoksuthar14/Ai-Revolutionizing-Student-Education-with-AI-Generated-Video-Content/blob/main/diagram%20(3).png)
 
 
 ## 🛠 Technology Stack
