@@ -3,7 +3,7 @@
 
 
 
-![Project Banner]()
+![Project Banner](mvp 1.png)
 
 ## 🌍 Overview
 **Revolutionizing Student Education with AI-Generated Video Content** is an AI-powered adaptive learning platform that dynamically personalizes video tutorials based on real-time student responses. Unlike traditional static videos, our solution ensures an interactive and engaging experience, helping students grasp concepts more effectively.
